@@ -5,10 +5,11 @@ import pandas as pd
 class TestLogAnalyzer(unittest.TestCase):
     def setUp(self):
         data = [
-            {"ip": "192.168.1.1", "date": "2024-12-10", "status": "200", "request": "GET /index.html", "size": "4523"},
-            {"ip": "192.168.1.2", "date": "2024-12-10", "status": "401", "request": "POST /login", "size": "34"},
-            {"ip": "192.168.1.2", "date": "2024-12-10", "status": "401", "request": "POST /login", "size": "34"},
-            {"ip": "192.168.1.3", "date": "2024-12-10", "status": "200", "request": "GET /dashboard", "size": "1234"},
+            {"ip": "192.168.1.1", "date": "10/Dec/2024:13:55:42 +0000", "status": "200", "request": "GET /index.html", "size": "4523"},
+            {"ip": "192.168.1.2", "date": "10/Dec/2024:14:12:05 +0000", "status": "401", "request": "POST /login", "size": "34"},
+            {"ip": "192.168.1.2", "date": "10/Dec/2024:14:12:06 +0000", "status": "401", "request": "POST /login", "size": "34"},
+            {"ip": "192.168.1.3", "date": "10/Dec/2024:14:15:00 +0000", "status": "200", "request": "GET /dashboard", "size": "1234"},
+            {"ip": "192.168.1.3", "date": "10/Dec/2024:14:16:00 +0000", "status": "200", "request": "GET /dashboard", "size": "1234"},
         ]
         self.logs_df = pd.DataFrame(data)
 
