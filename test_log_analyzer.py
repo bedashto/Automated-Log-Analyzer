@@ -1,4 +1,3 @@
-```python
 import unittest
 from log_analyzer import parse_log, detect_failed_logins, detect_high_request_ips, detect_brute_force
 import pandas as pd
